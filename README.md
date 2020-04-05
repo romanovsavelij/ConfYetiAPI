@@ -1,14 +1,15 @@
 # ConfYetiAPI
 
-REST API for Conf Yeti.
+REST API for Conf Yeti
 
 ## Install
 
-    TO DO
+    pip3 install django
+    pip3 install python-dateutil
 
 ## Run the app
 
-    unicorn -p 7000
+    python3 manage.py runserver 8000
 
 ## Run the tests
 
@@ -53,19 +54,15 @@ REST API for Conf Yeti.
   
    **Multiple values**
    
-   You can specify several values of id, project and participant params. In this case you will get all the conferences, containing one of the values, specified in params.
+   You can specify several values of id, project and participant params. In this case you will get all the conferences, containing at least one of the ids, one of the project and one of the participants, specified in params.
    
    However, dateStart and dateFinish params should be unique.
    
-   
-
   
 * **Success Response:**
 
-  
-
   * **Code:** 200 <br />
-    **Content:** JSON containing all the conferences filtered by given params 
+    **Content:** JSON containing conferences filtered by given params 
  
 * **Error Response:**
 
