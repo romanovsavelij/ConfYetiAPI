@@ -12,13 +12,13 @@ REST API for Conf Yeti.
 
 ## Run the tests
 
-    ./run-tests.sh
+    python3 manage.py test
 
 ## Requests
 
 * **URL**
 
-  /conferences
+  /conferences/
 
 * **Method:**
 
@@ -76,7 +76,7 @@ REST API for Conf Yeti.
     **Content:** `dateFinish param should be unique`
     
   * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `Wrong date format`
+    **Content:** `Invalid date`
    
 ## Examples
 
