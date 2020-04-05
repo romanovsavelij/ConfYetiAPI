@@ -81,6 +81,8 @@ REST API for Conf Yeti
 
 `curl -i -X GET -d 'project=WebStorm&project=PyCharm&dateStart=2019-02-09' http://localhost:8000/conferences/`
 
+### Result
+
 Those conferences which start not earlier than 2019-02-09 and related to either WebStorm or PyCharm.
 
 ### Response
@@ -100,6 +102,8 @@ X-Content-Type-Options: nosniff
 ### Request
 
 `curl -i -X GET http://localhost:8000/conferences/?id=5c092621a19ac14bd086c3ae`
+
+### Result
 
 Conference with _id = 5c092621a19ac14bd086c3ae.
 

@@ -1,4 +1,3 @@
-import dateutil
 from django.http import JsonResponse, HttpResponseBadRequest, HttpResponse
 import json
 from dateutil import parser
@@ -6,13 +5,13 @@ from dateutil import parser
 with open('data/conferences.json', 'r') as conferences_json:
     conferences = json.load(conferences_json)
 
+
 def filter_conferences(request):
     global conferences
 
     ids = request.GET.getlist('id')
     projects = request.GET.getlist('project')
     participants = request.GET.getlist('participant')
-
     input_date = request.GET.get('dateStart')
     if input_date:
         try:
